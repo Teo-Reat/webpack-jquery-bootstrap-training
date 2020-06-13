@@ -3,13 +3,14 @@ let path = require('path');
 let UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 let inProduction = (process.env.NODE_ENV === 'production');
 let MiniCssExtractPlugin = require('mini-css-extract-plugin');
+let HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	"mode": "development",
 	entry: {
 		app: [
 			'./src/app/index.js',
-			'./src/sass/style.scss'
+			'./src/sass/style.scss',
 		]
 	},
 	output: {
@@ -25,8 +26,7 @@ module.exports = {
 						loader: MiniCssExtractPlugin.loader,
 					},
 					{
-						loader: 'css-loader',
-						options: { url: false }
+						loader: 'css-loader'
 					},
 					'sass-loader'
 				]
@@ -42,7 +42,7 @@ module.exports = {
 					{
 						loader: 'file-loader',
 						options: {
-							name: '[name].[ext]',
+							// name: '[name].[ext]',
 							outputPath: 'images'
 						}
 					},
@@ -51,9 +51,19 @@ module.exports = {
 			{
 				test: /\.(woff|woff2|eot|ttf|otf)$/,
 				use: [
-					'file-loader',
+					{
+						loader: 'file-loader',
+						options: {
+							name: '[name].[ext]',
+							outputPath: 'fonts'
+						}
+					}
 				],
 			},
+			{
+				test: /\.html$/,
+				use: ["html-loader"]
+			}
 		]
 	},
 	plugins: [
@@ -62,6 +72,9 @@ module.exports = {
 		}),
 		new webpack.LoaderOptionsPlugin({
 			minimize: inProduction
+		}),
+		new HtmlWebpackPlugin({
+			template: 'src/template.html'
 		})
 	]
 };

@@ -29,9 +29,13 @@
   url('../assets/fonts/open-sans-v17-latin_cyrillic-600.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
 
+//Variables
+$font-base: "Open Sans Regular", sans-serif;
+$font-secondary: "Open Sans SemiBold", sans-serif;
+
 //Global
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-base;
 }
 ul {
   padding: 0;

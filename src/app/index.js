@@ -1,5 +1,9 @@
-let sum = (a, b) => {
-	return a + b
-}
+import $ from 'jquery'
 
-console.log(sum(1, 2));
+$(document).ready(() => {
+	// $('#news_item').hover(function () {
+	// 	$(this).addClass('col-lg-3');
+	// }, function () {
+	// 	$(this).removeClass('col-lg-6');
+	// });
+})

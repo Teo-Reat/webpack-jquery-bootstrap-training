@@ -240,8 +240,8 @@
         <h2>Новости</h2>
         <div class="container">
             <div class="col-lg-10 mx-auto">
-                <div class="row news__wrapper">
-                    <div class="col-lg-6 news__item">
+                <div class="row news__wrapper justify-content-between">
+                    <div class="news__item">
                         <div class="news__item__image">
                             <img src="assets/images/news1.jpg" alt="">
                         </div>
@@ -250,7 +250,7 @@
                             <h4>Перспектива 2020: почему растет экспорт русского ПО</h4>
                         </div>
                     </div>
-                    <div class="col-lg-3 news__item">
+                    <div class="news__item">
                         <div class="news__item__image">
                             <img src="assets/images/news2.jpg" alt="">
                         </div>
@@ -259,7 +259,7 @@
                             <h4>Documino поддерживает российскую СУБД Postgres Pro</h4>
                         </div>
                     </div>
-                    <div class="col-lg-3 news__item">
+                    <div class="news__item">
                         <div class="news__item__image">
                             <img src="assets/images/news3.jpg" alt="">
                         </div>
@@ -268,7 +268,7 @@
                             <h4>ИТ-аутсорсинг: рынок падает – спрос растет?</h4>
                         </div>
                     </div>
-                    <div class="col-lg-3 news__item">
+                    <div class="news__item">
                         <div class="news__item__image">
                             <img src="assets/images/news4.jpg" alt="">
                         </div>
@@ -277,7 +277,7 @@
                             <h4>Модернизация автоматизированной системы управленческого документооборота</h4>
                         </div>
                     </div>
-                    <div class="col-lg-3 news__item">
+                    <div class="news__item">
                         <div class="news__item__image">
                             <img src="assets/images/news5.jpg" alt="">
                         </div>
@@ -286,7 +286,7 @@
                             <h4>Зачем управлять организационными изменениями в проектах?</h4>
                         </div>
                     </div>
-                    <div class="col-lg-3 news__item">
+                    <div class="news__item">
                         <div class="news__item__image">
                             <img src="assets/images/news6.jpg" alt="">
                         </div>
@@ -295,7 +295,7 @@
                             <h4>СЭД Documino поддерживает российскую СУБД Postgres Pro</h4>
                         </div>
                     </div>
-                    <div class="col-lg-3 news__item">
+                    <div class="news__item">
                         <div class="news__item__image">
                             <img src="assets/images/news7.jpg" alt="">
                         </div>
@@ -309,56 +309,73 @@
         </div>
     </section>
 </main>
-<footer class="footer container">
-    <div class="row">
-        <p>Карта сайта</p>
-        <ul>
-            <li>
-                <a href="#">Cистема</a>
-            </li>
-            <li>
-                <a href="#">О компании</a>
-            </li>
-            <li>
-                <a href="#">Возможности</a>
-            </li>
-            <li>
-                <a href="#">Партнеры</a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="#">Стоимость</a>
-            </li>
-            <li>
-                <a href="#">Блог</a>
-            </li>
-            <li>
-                <a href="#">Контакты</a>
-            </li>
-        </ul>
-        <div>
-            <a href="#">
-                <div class="facebook"></div>
-            </a>
-            <a href="#">
-                <div class="in"></div>
-            </a>
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer__wrapper-top col-lg-10 mx-auto">
+                <div class="row justify-content-between">
+                    <p class="footer-top__map">
+                        <a href="#">Карта сайта</a>
+                    </p>
+                    <ul class="footer-top__list-one">
+                        <li>
+                            <a href="#">Cистема</a>
+                        </li>
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Возможности</a>
+                        </li>
+                        <li>
+                            <a href="#">Партнеры</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-top__list-two">
+                        <li>
+                            <a href="#">Стоимость</a>
+                        </li>
+                        <li>
+                            <a href="#">Блог</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="footer-top__social">
+                        <a href="#" class="facebook__background">
+                            <div class="facebook"></div>
+                        </a>
+                        <a href="#" class="in__background">
+                            <div class="in"></div>
+                        </a>
+                    </div>
+                    <p class="footer-top__address">
+                        115114, г. Москва,<br>
+                        Дербеневская наб., д. 11,<br>
+                        БЦ «Полларс», корп. В, оф. 1402<br>
+                        <span>+7 (495) 646 75 58</span>
+                    </p>
+                </div>
+            </div>
         </div>
-        <p>
-            115114, г. Москва,
-            Дербеневская наб., д. 11,
-            БЦ «Полларс», корп. В, оф. 1402
-            <span>+7 (495) 646 75 58</span>
-        </p>
     </div>
-    <div class="row">
-        <p>
-            © 2013 - 2019, «АйДи – Технологии управления». Все права защищены.
-        </p>
-        <div>
-            <span>СОЗДАНО</span>
-            <div class="logo-2015"></div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer__wrapper-bottom col-lg-10 mx-auto">
+                <div class="row justify-content-between">
+                    <p class="footer-bottom__rights">
+                        © 2013 - 2019, «АйДи – Технологии управления». Все права защищены.
+                    </p>
+                    <div class="footer-bottom__logo">
+                        <div>
+                            <span class="footer-bottom__logo__created">СОЗДАНО</span>
+                            <span class="footer-bottom__logo__year">2019</span>
+                        </div>
+                        <a class="logo-2015"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </footer>

@@ -524,7 +524,7 @@ p {
   &::before {
     content: '';
     display: block;
-    background: url("../assets/images/other-sprites.png") -144px -35px;
+    background: url("../assets/images/other-sprites.png") -155px -35px;
     width: 13px;
     height: 15px;
     position: absolute;
@@ -552,12 +552,39 @@ p {
   & > div {
     background: url("../assets/images/popup-background.jpg");
     padding: 110px 0 80px 0;
+    position: relative;
     & > h3 {
       font-size: 35px;
       font-weight: 700;
       text-align: center;
       margin: 0;
     }
+  }
+}
+#popup__consultation__close {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 54px;
+  right: 58px;
+  border: none;
+  background: white;
+  outline: transparent;
+  cursor: pointer;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    display: block;
+    background-color: $color-secondary;
+    transform: rotate(45deg);
+    top: 37px;
+    left: 23px;
+  }
+  &::after {
+    transform: rotate(-45deg);
   }
 }
 .popup__form {
@@ -758,22 +785,24 @@ p {
 
 ////-Other
 
-.logo, .logo-2015, .magnifier-hover, .magnifier, .in,
-.calendar, .facebook
+.logo, .logo-2015, .documino-logo2, .magnifier-hover, .magnifier,
+.in, .calendar, .facebook
 { display: inline-block; background: url('../assets/images/other-sprites.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
 
 .logo { background-position: -1px -0px; width: 168px; height: 34px; }
 .logo-2015 { background-position: -1px -35px; width: 55px; height: 53px; }
-.in { background-position: -121px -35px; width: 22px; height: 17px; }
-.calendar { background-position: -144px -35px; width: 13px; height: 15px; }
-.facebook { background-position: -144px -51px; width: 11px; height: 18px; }
+.documino-logo2 { background-position: -57px -35px; width: 33px; height: 34px; }
+.magnifier-hover { background-position: -91px -35px; width: 31px; height: 31px; }
+.in { background-position: -91px -67px; width: 22px; height: 17px; }
+//.calendar { background-position: -155px -35px; width: 13px; height: 15px; }
+.facebook { background-position: -155px -51px; width: 11px; height: 18px; }
 .magnifier {
-  background-position: -89px -35px;
+  background-position: -123px -35px;
   width: 31px;
   height: 31px;
   cursor: pointer;
   &:hover {
-    background-position: -57px -35px;
+    background-position: -91px -35px;
   }
 }
 
@@ -784,3 +813,26 @@ p {
 .desk1 { background-position: -1px -0px; width: 298px; height: 166px; }
 .desk2 { background-position: -1px -167px; width: 298px; height: 166px; }
 .desk3 { background-position: -1px -334px; width: 298px; height: 165px; }
+
+//.menu {
+//
+//  background:#428bca;
+//  color:#fff;
+//  height:50px;
+//  line-height:30px;
+//  letter-spacing:1px;
+//  width:100%;
+//}
+//.content {
+//  margin-top:10px;
+//}
+//.menu-padding {
+//  padding-top:40px;
+//}
+//.content p {
+//  margin-bottom:20px;
+//}
+//.sticky {
+//  position:fixed;
+//  top:0;
+//}

@@ -3,34 +3,65 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Hello, world!</title>
+    <title>Documino</title>
 </head>
 <body>
-<header class="header container">
-    <div class="col-lg-10 mx-auto">
-        <div class="row justify-content-between">
-            <div class="">
-                <div class="logo"></div>
-            </div>
-            <nav class="main-navigation">
-                <ul class="d-flex justify-content-lg-center">
-                    <li class="main-navigation__item main-navigation__item__active"><a href="#">Cистема</a></li>
-                    <li class="main-navigation__item"><a href="#">О компании</a></li>
-                    <li class="main-navigation__item"><a href="#">Возможности</a></li>
-                    <li class="main-navigation__item"><a href="#">Партнеры</a></li>
-                    <li class="main-navigation__item"><a href="#">Стоимость</a></li>
-                    <li class="main-navigation__item"><a href="#">Блог</a></li>
-                    <li class="main-navigation__item"><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="contact-block">
-                <div class="row">
-                    <div class="consultation">
-                        <p>+7 (495) 646-75-58</p>
-                        <button>консультация</button>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto static">
+                <div class="row justify-content-between header__wrapper">
+                    <div>
+                        <div class="logo"></div>
                     </div>
-                    <div class="search">
-                        <div class="magnifier"></div>
+                    <nav class="main-navigation">
+                        <ul class="d-flex justify-content-lg-center">
+                            <li class="main-navigation__item"
+                                id="main-navigation__system">
+                                <a href="#">Cистема</a>
+                                <div class="hide" id="main-navigation__system__menu">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-10 mx-auto">
+                                                <ul class="main-navigation__item__list">
+                                                    <li class="main-navigation__item__sub"><a href="#">О системе</a>
+                                                    </li>
+                                                    <li class="main-navigation__item__sub"><a href="#">Преимущества</a>
+                                                    </li>
+                                                    <li class="main-navigation__item__sub"><a href="#">Базовая
+                                                        конфигурация</a></li>
+                                                    <li class="main-navigation__item__sub"><a href="#">Дополнительные
+                                                        модули</a></li>
+                                                    <li class="main-navigation__item__sub"><a
+                                                            href="#">Импортозамещение</a></li>
+                                                    <li class="main-navigation__item__sub"><a href="#">Документация</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main-navigation__item">
+                                <a href="#">О компании</a>
+                            </li>
+                            <li class="main-navigation__item"><a href="#">Возможности</a></li>
+                            <li class="main-navigation__item"><a href="#">Партнеры</a></li>
+                            <li class="main-navigation__item"><a href="#">Стоимость</a></li>
+                            <li class="main-navigation__item"><a href="#">Блог</a></li>
+                            <li class="main-navigation__item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="contact-block">
+                        <div class="row">
+                            <div class="consultation">
+                                <p>+7 (495) 646-75-58</p>
+                                <button id="button__consultation">консультация</button>
+                            </div>
+                            <div class="search">
+                                <div class="magnifier"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -306,6 +337,27 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="popup hide" id="popup__consultation">
+        <div class="container">
+            <h3>Получить консультацию</h3>
+            <form class="popup__form mx-auto">
+                <label><input type="text" name="name" class="popup__form__field" placeholder="Ваше имя"></label>
+                <label><input type="text" name="phone" class="popup__form__field" placeholder="Телефон"></label>
+                <label><input type="email" name="email" class="popup__form__field" placeholder="Е-mail"></label>
+                <label><textarea name="message" class="popup__form__field"
+                                 placeholder="Ваше сообщение"></textarea></label>
+                <div><img src="assets/images/captcha.jpg" alt=""></div>
+                <button type="submit">ЗАКАЗАТЬ</button>
+                <div class="popup-rights">
+                    <input type="checkbox" id="popup-rights__checkbox">
+                    <label for="popup-rights__checkbox">Нажимая кнопку «Заказать», я даю свое согласие на обработку моих
+                        персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О
+                        персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных
+                        данных</label>
+                </div>
+            </form>
         </div>
     </section>
 </main>

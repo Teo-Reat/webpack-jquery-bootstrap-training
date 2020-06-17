@@ -9,7 +9,7 @@
 <header class="header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-10 mx-auto static">
+            <div class="col-sm-12 col-lg-10 mx-auto static">
                 <div class="row justify-content-between header__wrapper">
                     <div>
                         <div class="logo"></div>
@@ -18,38 +18,16 @@
                         <ul class="d-flex justify-content-lg-center">
                             <li class="main-navigation__item"
                                 id="main-navigation__system">
-                                <a href="#">Cистема</a>
-                                <div class="hide" id="main-navigation__system__menu">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-10 mx-auto">
-                                                <ul class="main-navigation__item__list">
-                                                    <li class="main-navigation__item__sub"><a href="#">О системе</a>
-                                                    </li>
-                                                    <li class="main-navigation__item__sub"><a href="#">Преимущества</a>
-                                                    </li>
-                                                    <li class="main-navigation__item__sub"><a href="#">Базовая
-                                                        конфигурация</a></li>
-                                                    <li class="main-navigation__item__sub"><a href="#">Дополнительные
-                                                        модули</a></li>
-                                                    <li class="main-navigation__item__sub"><a
-                                                            href="#">Импортозамещение</a></li>
-                                                    <li class="main-navigation__item__sub"><a href="#">Документация</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <button type="button">Cистема</button>
                             </li>
                             <li class="main-navigation__item">
-                                <a href="#">О компании</a>
+                                <button type="button">О компании</button>
                             </li>
-                            <li class="main-navigation__item"><a href="#">Возможности</a></li>
-                            <li class="main-navigation__item"><a href="#">Партнеры</a></li>
-                            <li class="main-navigation__item"><a href="#">Стоимость</a></li>
-                            <li class="main-navigation__item"><a href="#">Блог</a></li>
-                            <li class="main-navigation__item"><a href="#">Контакты</a></li>
+                            <li class="main-navigation__item"><button type="button">Возможности</button></li>
+                            <li class="main-navigation__item"><button type="button">Партнеры</button></li>
+                            <li class="main-navigation__item"><button type="button">Стоимость</button></li>
+                            <li class="main-navigation__item"><button type="button">Блог</button></li>
+                            <li class="main-navigation__item"><button type="button">Контакты</button></li>
                         </ul>
                     </nav>
                     <div class="contact-block">
@@ -67,19 +45,41 @@
             </div>
         </div>
     </div>
+    <div class="hide" id="main-navigation__system__menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <ul class="main-navigation__item__list">
+                        <li class="main-navigation__item__sub"><a href="#">О системе</a>
+                        </li>
+                        <li class="main-navigation__item__sub"><a href="#">Преимущества</a>
+                        </li>
+                        <li class="main-navigation__item__sub"><a href="#">Базовая
+                            конфигурация</a></li>
+                        <li class="main-navigation__item__sub"><a href="#">Дополнительные
+                            модули</a></li>
+                        <li class="main-navigation__item__sub"><a
+                                href="#">Импортозамещение</a></li>
+                        <li class="main-navigation__item__sub"><a href="#">Документация</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 <main class="main">
     <section class="title-block">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <div class="row">
+                    <div class="row title-block__content">
                         <div class="title-block__title col-lg-4 col-sm-12">
                             <h1>Платформа автоматизации процессов электронного документооборота</h1>
                             <p>Самая современная СЭД</p>
                             <button>Демоверсия</button>
                         </div>
-                        <div class="title-block__images col-lg-8">
+                        <div class="title-block__images col-lg-8 order-sm-first">
                             <img src="assets/images/desktop-all.png" alt="">
                         </div>
                     </div>
@@ -208,7 +208,7 @@
         <div class="container">
             <div class="col-lg-10 mx-auto">
                 <div class="row justify-content-between customers__wrapper">
-                    <a href="#" class="">
+                    <a class="">
                         <div class="customers__back"></div>
                     </a>
                     <a href="#" class="rosset">
@@ -226,7 +226,7 @@
                     <a href="#" class="sibur">
                         <div class="customer5"></div>
                     </a>
-                    <a href="#">
+                    <a>
                         <div class="customers__next"></div>
                     </a>
                 </div>
@@ -366,7 +366,7 @@
     <div class="footer-top">
         <div class="container">
             <div class="footer__wrapper-top col-lg-10 mx-auto">
-                <div class="row justify-content-between">
+                <div class="row justify-content-between flex-wrap">
                     <p class="footer-top__map">
                         <a href="#">Карта сайта</a>
                     </p>

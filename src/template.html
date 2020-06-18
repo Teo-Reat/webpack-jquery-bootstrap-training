@@ -6,35 +6,85 @@
     <title>Documino</title>
 </head>
 <body>
+<!-- Trigger the modal with a button -->
+<!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
+
+<!-- Modal -->
+<!--<div id="myModal" class="modal fade" role="dialog">-->
+<!--    <div class="modal-dialog">-->
+
+<!--        &lt;!&ndash; Modal content&ndash;&gt;-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--                <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+<!--                <h4 class="modal-title">Modal Header</h4>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                <p>Some text in the modal.</p>-->
+<!--            </div>-->
+<!--            <div class="modal-footer">-->
+<!--                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </div>-->
+<!--</div>-->
 <header class="header">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-lg-10 mx-auto static">
+            <div class="col-lg-12 mx-auto static">
                 <div class="row justify-content-between header__wrapper">
                     <div>
                         <div class="logo"></div>
                     </div>
                     <nav class="main-navigation">
                         <ul class="d-flex justify-content-lg-center">
-                            <li class="main-navigation__item"
-                                id="main-navigation__system">
+                            <li class="main-navigation__item" id="main-navigation__system">
                                 <button type="button">Cистема</button>
+                                <ul class="main-navigation__item__list">
+                                    <li class="main-navigation__item__sub"><a href="#">О системе</a>
+                                    </li>
+                                    <li class="main-navigation__item__sub"><a href="#">Преимущества</a>
+                                    </li>
+                                    <li class="main-navigation__item__sub"><a href="#">Базовая
+                                        конфигурация</a></li>
+                                    <li class="main-navigation__item__sub"><a href="#">Дополнительные
+                                        модули</a></li>
+                                    <li class="main-navigation__item__sub"><a
+                                            href="#">Импортозамещение</a></li>
+                                    <li class="main-navigation__item__sub"><a href="#">Документация</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="main-navigation__item">
                                 <button type="button">О компании</button>
                             </li>
-                            <li class="main-navigation__item"><button type="button">Возможности</button></li>
-                            <li class="main-navigation__item"><button type="button">Партнеры</button></li>
-                            <li class="main-navigation__item"><button type="button">Стоимость</button></li>
-                            <li class="main-navigation__item"><button type="button">Блог</button></li>
-                            <li class="main-navigation__item"><button type="button">Контакты</button></li>
+                            <li class="main-navigation__item">
+                                <button type="button">Возможности</button>
+                            </li>
+                            <li class="main-navigation__item">
+                                <button type="button">Партнеры</button>
+                            </li>
+                            <li class="main-navigation__item">
+                                <button type="button">Стоимость</button>
+                            </li>
+                            <li class="main-navigation__item">
+                                <button type="button">Блог</button>
+                            </li>
+                            <li class="main-navigation__item">
+                                <button type="button">Контакты</button>
+                            </li>
                         </ul>
                     </nav>
                     <div class="contact-block">
                         <div class="row">
                             <div class="consultation">
                                 <p>+7 (495) 646-75-58</p>
-                                <button id="button__consultation">консультация</button>
+                                <button type="button"
+                                        class="btn btn-info btn-lg"
+                                        data-toggle="modal"
+                                        data-target="#myModal">консультация
+                                </button>
                             </div>
                             <div class="search">
                                 <div class="magnifier"></div>
@@ -45,41 +95,19 @@
             </div>
         </div>
     </div>
-    <div class="hide" id="main-navigation__system__menu">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <ul class="main-navigation__item__list">
-                        <li class="main-navigation__item__sub"><a href="#">О системе</a>
-                        </li>
-                        <li class="main-navigation__item__sub"><a href="#">Преимущества</a>
-                        </li>
-                        <li class="main-navigation__item__sub"><a href="#">Базовая
-                            конфигурация</a></li>
-                        <li class="main-navigation__item__sub"><a href="#">Дополнительные
-                            модули</a></li>
-                        <li class="main-navigation__item__sub"><a
-                                href="#">Импортозамещение</a></li>
-                        <li class="main-navigation__item__sub"><a href="#">Документация</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
 </header>
 <main class="main">
     <section class="title-block">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto">
+                <div class="col-lg-12 mx-auto">
                     <div class="row title-block__content">
                         <div class="title-block__title col-lg-4 col-sm-12">
                             <h1>Платформа автоматизации процессов электронного документооборота</h1>
                             <p>Самая современная СЭД</p>
                             <button>Демоверсия</button>
                         </div>
-                        <div class="title-block__images col-lg-8 order-sm-first">
+                        <div class="title-block__images col-lg-8 order-sm-first order-lg-last">
                             <img src="assets/images/desktop-all.png" alt="">
                         </div>
                     </div>
@@ -88,117 +116,129 @@
         </div>
     </section>
     <section class="advantages container">
-        <div class="row">
-            <div class="col-lg-10 mx-auto advantages__items">
-                <div class="advantages__wrapper">
-                    <div class="row">
-                        <div class="advantages__image col-lg-5">
-                            <div class="desk1"></div>
-                        </div>
-                        <div class="advantages__description col-lg-7">
-                            <h3>Простота интерфейса</h3>
-                            <p>
-                                Простая расширяемая архитектура. Возможность реализации
-                                высоконадежной и отказоустойчивой системы для каждого уровня
-                                программного обеспечения. Максимальное быстродействие –
-                                между бизнес-логикой и СУБД – минимум логических
-                                архитектурных слоев.
-                            </p>
-                        </div>
-                    </div>
-                    <hr class="advantages__separator">
-                    <div class="row">
-                        <div class="advantages__description col-lg-7">
-                            <h3> Производительность</h3>
-                            <p>
-                                Простая расширяемая архитектура. Возможность реализации
-                                высоконадежной и отказоустойчивой системы для каждого уровня
-                                программного обеспечения. Максимальное быстродействие –
-                                между бизнес-логикой и СУБД – минимум логических
-                                архитектурных слоев.
-                            </p>
-                        </div>
-                        <div class="advantages__image col-lg-5">
-                            <div class="desk1"></div>
-                        </div>
-                    </div>
-                    <hr class="advantages__separator">
-                    <div class="row">
-                        <div class="advantages__image col-lg-5">
-                            <div class="desk3"></div>
-                        </div>
-                        <div class="advantages__description col-lg-7">
-                            <h3>Гибкость в настройках</h3>
-                            <p>
-                                Простая расширяемая архитектура. Возможность реализации
-                                высоконадежной и отказоустойчивой системы для каждого уровня
-                                программного обеспечения. Максимальное быстродействие –
-                                между бизнес-логикой и СУБД – минимум логических
-                                архитектурных слоев.
-                            </p>
-                        </div>
-                    </div>
+        <div class="advantages__items">
+            <div class="row">
+                <div class="advantages__image col-lg-6">
+                    <div class="desk1"></div>
+                </div>
+                <div class="advantages__description col-lg-6">
+                    <h3>Простота интерфейса</h3>
+                    <p>
+                        Простая расширяемая архитектура. Возможность реализации
+                        высоконадежной и отказоустойчивой системы для каждого уровня
+                        программного обеспечения. Максимальное быстродействие –
+                        между бизнес-логикой и СУБД – минимум логических
+                        архитектурных слоев.
+                    </p>
+                </div>
+            </div>
+            <hr class="advantages__separator">
+            <div class="row">
+                <div class="advantages__description col-lg-6">
+                    <h3> Производительность</h3>
+                    <p>
+                        Простая расширяемая архитектура. Возможность реализации
+                        высоконадежной и отказоустойчивой системы для каждого уровня
+                        программного обеспечения. Максимальное быстродействие –
+                        между бизнес-логикой и СУБД – минимум логических
+                        архитектурных слоев.
+                    </p>
+                </div>
+                <div class="advantages__image col-lg-6">
+                    <div class="desk1"></div>
+                </div>
+            </div>
+            <hr class="advantages__separator">
+            <div class="row">
+                <div class="advantages__image col-lg-6">
+                    <div class="desk3"></div>
+                </div>
+                <div class="advantages__description col-lg-6">
+                    <h3>Гибкость в настройках</h3>
+                    <p>
+                        Простая расширяемая архитектура. Возможность реализации
+                        высоконадежной и отказоустойчивой системы для каждого уровня
+                        программного обеспечения. Максимальное быстродействие –
+                        между бизнес-логикой и СУБД – минимум логических
+                        архитектурных слоев.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     <section class="functions container">
         <h2>Автоматизируемые функции</h2>
-        <div class="functions__wrapper col-lg-10 mx-auto">
-            <div class="row justify-content-between">
+        <div class="row">
+            <div class="col-lg-4">
                 <div class="functions__item">
                     <div>
                         <div class="icon1"></div>
+                        <p>Электронный <br>архив</p>
                     </div>
-                    <p>Электронный <br>архив</p>
                 </div>
+            </div>
+            <div class="col-lg-4">
                 <div class="functions__item">
                     <div>
                         <div class="icon2"></div>
+                        <p>Электронный <br>архив</p>
                     </div>
-                    <p>Управление <br>документами</p>
                 </div>
+            </div>
+            <div class="col-lg-4">
                 <div class="functions__item">
                     <div>
                         <div class="icon3"></div>
+                        <p>Электронный <br>архив</p>
                     </div>
-                    <p>Управление <br>процессами</p>
                 </div>
+            </div>
+            <div class="col-lg-4">
                 <div class="functions__item">
                     <div>
                         <div class="icon4"></div>
+                        <p>Электронный <br>архив</p>
                     </div>
-                    <p>Договорной <br>документооборот</p>
                 </div>
+            </div>
+            <div class="col-lg-4">
                 <div class="functions__item">
                     <div>
                         <div class="icon5"></div>
+                        <p>Электронный <br>архив</p>
                     </div>
-                    <p>Управление <br>совещаниями</p>
                 </div>
+            </div>
+            <div class="col-lg-4">
                 <div class="functions__item">
                     <div>
                         <div class="icon6"></div>
+                        <p>Электронный <br>архив</p>
                     </div>
-                    <p>Контроль <br>исполнения</p>
                 </div>
+            </div>
+            <div class="col-lg-4">
                 <div class="functions__item">
                     <div>
                         <div class="icon7"></div>
+                        <p>Электронный <br>архив</p>
                     </div>
-                    <p>Полнотекстовый <br>поиск</p>
                 </div>
+            </div>
+            <div class="col-lg-4">
                 <div class="functions__item">
                     <div>
                         <div class="icon8"></div>
+                        <p>Электронный <br>архив</p>
                     </div>
-                    <p>Отчеты <br>и аналитика</p>
                 </div>
+            </div>
+            <div class="col-lg-4">
                 <div class="functions__item">
                     <div>
                         <div class="icon9"></div>
+                        <p>Электронный <br>архив</p>
                     </div>
-                    <p>Поддержка мобильных <br>устройств</p>
                 </div>
             </div>
         </div>
@@ -206,227 +246,215 @@
     <section class="customers">
         <h2>Клиенты</h2>
         <div class="container">
-            <div class="col-lg-10 mx-auto">
-                <div class="row justify-content-between customers__wrapper">
-                    <a class="">
-                        <div class="customers__back"></div>
-                    </a>
-                    <a href="#" class="rosset">
-                        <div class="customer1"></div>
-                    </a>
-                    <a href="#" class="rosatom">
-                        <div class="customer2"></div>
-                    </a>
-                    <a href="#" class="fskees">
-                        <div class="customer3"></div>
-                    </a>
-                    <a href="#" class="gasprom">
-                        <div class="customer4"></div>
-                    </a>
-                    <a href="#" class="sibur">
-                        <div class="customer5"></div>
-                    </a>
-                    <a>
-                        <div class="customers__next"></div>
-                    </a>
-                </div>
+            <div class="row justify-content-between customers__wrapper">
+                <a class="">
+                    <div class="customers__back"></div>
+                </a>
+                <a href="#" class="rosset">
+                    <div class="customer1"></div>
+                </a>
+                <a href="#" class="rosatom">
+                    <div class="customer2"></div>
+                </a>
+                <a href="#" class="fskees">
+                    <div class="customer3"></div>
+                </a>
+                <a href="#" class="gasprom">
+                    <div class="customer4"></div>
+                </a>
+                <a href="#" class="sibur">
+                    <div class="customer5"></div>
+                </a>
+                <a>
+                    <div class="customers__next"></div>
+                </a>
             </div>
         </div>
     </section>
     <section class="capabilities container">
         <h2>Возможности гибкой настройки</h2>
-        <div class="col-lg-10 mx-auto">
-            <ul class="row justify-content-center flex-wrap capabilities__items">
-                <li class="capabilities__item capabilities__item__active">
-                    <button>Создание типов документов</button>
-                </li>
-                <li class="capabilities__item">
-                    <button>Добавление новых атрибутов</button>
-                </li>
-                <li class="capabilities__item">
-                    <button>Редактирование бизнес-процессов</button>
-                </li>
-                <li class="capabilities__item">
-                    <button>Управление шаблонами</button>
-                </li>
-                <li class="capabilities__item">
-                    <button>Управление НСИ</button>
-                </li>
-                <li class="capabilities__item">
-                    <button>Мониторинг</button>
-                </li>
-            </ul>
-            <div class="capabilities__image">
-                <a href="#">
-                    <div class="capabilities__back"></div>
-                </a>
-                <img src="assets/images/desktop-big.png" alt="Big laptop">
-                <a href="#">
-                    <div class="capabilities__next"></div>
-                </a>
-            </div>
+        <ul class="capabilities__items">
+            <li class="capabilities__item capabilities__item__active">
+                <button>Создание типов документов</button>
+            </li>
+            <li class="capabilities__item">
+                <button>Добавление новых атрибутов</button>
+            </li>
+            <li class="capabilities__item">
+                <button>Редактирование бизнес-процессов</button>
+            </li>
+            <li class="capabilities__item">
+                <button>Управление шаблонами</button>
+            </li>
+            <li class="capabilities__item">
+                <button>Управление НСИ</button>
+            </li>
+            <li class="capabilities__item">
+                <button>Мониторинг</button>
+            </li>
+        </ul>
+        <div class="capabilities__image">
+            <a href="#">
+                <div class="capabilities__back"></div>
+            </a>
+            <img src="assets/images/desktop-big.png" alt="Big laptop">
+            <a href="#">
+                <div class="capabilities__next"></div>
+            </a>
         </div>
     </section>
     <section class="news">
         <h2>Новости</h2>
         <div class="container">
-            <div class="col-lg-10 mx-auto">
-                <div class="row news__wrapper justify-content-between">
-                    <div class="news__item">
-                        <div class="news__item__image">
-                            <img src="assets/images/news1.jpg" alt="">
-                        </div>
-                        <div class="news__item__description">
-                            <span>13.05.2019</span>
-                            <h4>Перспектива 2020: почему растет экспорт русского ПО</h4>
-                        </div>
+            <div class="row news__wrapper">
+                <div class="news__item col-lg-6">
+                    <div class="news__item__image">
+                        <img src="assets/images/news1.jpg" alt="">
                     </div>
-                    <div class="news__item">
-                        <div class="news__item__image">
-                            <img src="assets/images/news2.jpg" alt="">
-                        </div>
-                        <div class="news__item__description">
-                            <span>13.05.2019</span>
-                            <h4>Documino поддерживает российскую СУБД Postgres Pro</h4>
-                        </div>
+                    <div class="news__item__description">
+                        <span>13.05.2019</span>
+                        <h4>Перспектива 2020: почему растет экспорт русского ПО</h4>
                     </div>
-                    <div class="news__item">
-                        <div class="news__item__image">
-                            <img src="assets/images/news3.jpg" alt="">
-                        </div>
-                        <div class="news__item__description">
-                            <span>13.05.2019</span>
-                            <h4>ИТ-аутсорсинг: рынок падает – спрос растет?</h4>
-                        </div>
+                </div>
+                <div class="news__item col-lg-3">
+                    <div class="news__item__image">
+                        <img src="assets/images/news2.jpg" alt="">
                     </div>
-                    <div class="news__item">
-                        <div class="news__item__image">
-                            <img src="assets/images/news4.jpg" alt="">
-                        </div>
-                        <div class="news__item__description">
-                            <span>13.05.2019</span>
-                            <h4>Модернизация автоматизированной системы управленческого документооборота</h4>
-                        </div>
+                    <div class="news__item__description">
+                        <span>13.05.2019</span>
+                        <h4>Documino поддерживает российскую СУБД Postgres Pro</h4>
                     </div>
-                    <div class="news__item">
-                        <div class="news__item__image">
-                            <img src="assets/images/news5.jpg" alt="">
-                        </div>
-                        <div class="news__item__description">
-                            <span>13.05.2019</span>
-                            <h4>Зачем управлять организационными изменениями в проектах?</h4>
-                        </div>
+                </div>
+                <div class="news__item col-lg-3">
+                    <div class="news__item__image">
+                        <img src="assets/images/news3.jpg" alt="">
                     </div>
-                    <div class="news__item">
-                        <div class="news__item__image">
-                            <img src="assets/images/news6.jpg" alt="">
-                        </div>
-                        <div class="news__item__description">
-                            <span>13.05.2019</span>
-                            <h4>СЭД Documino поддерживает российскую СУБД Postgres Pro</h4>
-                        </div>
+                    <div class="news__item__description">
+                        <span>13.05.2019</span>
+                        <h4>ИТ-аутсорсинг: рынок падает – спрос растет?</h4>
                     </div>
-                    <div class="news__item">
-                        <div class="news__item__image">
-                            <img src="assets/images/news7.jpg" alt="">
-                        </div>
-                        <div class="news__item__description">
-                            <span>13.05.2019</span>
-                            <h4>Реестр отечественного ПО пополнился российской ЕСМ-платформой Documino</h4>
-                        </div>
+                </div>
+                <div class="news__item col-lg-3">
+                    <div class="news__item__image">
+                        <img src="assets/images/news4.jpg" alt="">
+                    </div>
+                    <div class="news__item__description">
+                        <span>13.05.2019</span>
+                        <h4>Модернизация автоматизированной системы управленческого документооборота</h4>
+                    </div>
+                </div>
+                <div class="news__item col-lg-3">
+                    <div class="news__item__image">
+                        <img src="assets/images/news5.jpg" alt="">
+                    </div>
+                    <div class="news__item__description">
+                        <span>13.05.2019</span>
+                        <h4>Зачем управлять организационными изменениями в проектах?</h4>
+                    </div>
+                </div>
+                <div class="news__item col-lg-3">
+                    <div class="news__item__image">
+                        <img src="assets/images/news6.jpg" alt="">
+                    </div>
+                    <div class="news__item__description">
+                        <span>13.05.2019</span>
+                        <h4>СЭД Documino поддерживает российскую СУБД Postgres Pro</h4>
+                    </div>
+                </div>
+                <div class="news__item col-lg-3">
+                    <div class="news__item__image">
+                        <img src="assets/images/news7.jpg" alt="">
+                    </div>
+                    <div class="news__item__description">
+                        <span>13.05.2019</span>
+                        <h4>Реестр отечественного ПО пополнился российской ЕСМ-платформой Documino</h4>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="popup hide" id="popup__consultation">
-        <div class="container">
-            <button type="button" id="popup__consultation__close"></button>
-            <h3>Получить консультацию</h3>
-            <form class="popup__form mx-auto">
-                <label><input type="text" name="name" class="popup__form__field" placeholder="Ваше имя"></label>
-                <label><input type="text" name="phone" class="popup__form__field" placeholder="Телефон"></label>
-                <label><input type="email" name="email" class="popup__form__field" placeholder="Е-mail"></label>
-                <label><textarea name="message" class="popup__form__field"
-                                 placeholder="Ваше сообщение"></textarea></label>
-                <div><img src="assets/images/captcha.jpg" alt=""></div>
-                <button type="submit">ЗАКАЗАТЬ</button>
-                <div class="popup-rights">
-                    <input type="checkbox" id="popup-rights__checkbox">
-                    <label for="popup-rights__checkbox">Нажимая кнопку «Заказать», я даю свое согласие на обработку моих
-                        персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О
-                        персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных
-                        данных</label>
-                </div>
-            </form>
-        </div>
-    </section>
+<!--        <section class="popup modal fade" id="myModal" role="dialog">-->
+<!--            <button type="button" id="popup__consultation__close" class="close" data-dismiss="modal"></button>-->
+<!--            <h3>Получить консультацию</h3>-->
+<!--            <form class="popup__form mx-auto">-->
+<!--                <label><input type="text" name="name" class="popup__form__field" placeholder="Ваше имя"></label>-->
+<!--                <label><input type="text" name="phone" class="popup__form__field" placeholder="Телефон"></label>-->
+<!--                <label><input type="email" name="email" class="popup__form__field" placeholder="Е-mail"></label>-->
+<!--                <label><textarea name="message" class="popup__form__field"-->
+<!--                                 placeholder="Ваше сообщение"></textarea></label>-->
+<!--                <div><img src="assets/images/captcha.jpg" alt=""></div>-->
+<!--                <button type="submit">ЗАКАЗАТЬ</button>-->
+<!--                <div class="popup-rights">-->
+<!--                    <input type="checkbox" id="popup-rights__checkbox">-->
+<!--                    <label for="popup-rights__checkbox">Нажимая кнопку «Заказать», я даю свое согласие на обработку моих-->
+<!--                        персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О-->
+<!--                        персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных-->
+<!--                        данных</label>-->
+<!--                </div>-->
+<!--            </form>-->
+<!--        </section>-->
 </main>
 <footer class="footer">
     <div class="footer-top">
         <div class="container">
-            <div class="footer__wrapper-top col-lg-10 mx-auto">
-                <div class="row justify-content-between flex-wrap">
-                    <p class="footer-top__map">
-                        <a href="#">Карта сайта</a>
-                    </p>
-                    <ul class="footer-top__list-one">
-                        <li>
-                            <a href="#">Cистема</a>
-                        </li>
-                        <li>
-                            <a href="#">О компании</a>
-                        </li>
-                        <li>
-                            <a href="#">Возможности</a>
-                        </li>
-                        <li>
-                            <a href="#">Партнеры</a>
-                        </li>
-                    </ul>
-                    <ul class="footer-top__list-two">
-                        <li>
-                            <a href="#">Стоимость</a>
-                        </li>
-                        <li>
-                            <a href="#">Блог</a>
-                        </li>
-                        <li>
-                            <a href="#">Контакты</a>
-                        </li>
-                    </ul>
-                    <div class="footer-top__social">
-                        <a href="#" class="facebook__background">
-                            <div class="facebook"></div>
-                        </a>
-                        <a href="#" class="in__background">
-                            <div class="in"></div>
-                        </a>
-                    </div>
-                    <p class="footer-top__address">
-                        115114, г. Москва,<br>
-                        Дербеневская наб., д. 11,<br>
-                        БЦ «Полларс», корп. В, оф. 1402<br>
-                        <span>+7 (495) 646 75 58</span>
-                    </p>
+            <div class="footer-top__items">
+                <p class="footer-top__map">
+                    <a href="#">Карта сайта</a>
+                </p>
+                <ul class="footer-top__list-one">
+                    <li>
+                        <a href="#">Cистема</a>
+                    </li>
+                    <li>
+                        <a href="#">О компании</a>
+                    </li>
+                    <li>
+                        <a href="#">Возможности</a>
+                    </li>
+                    <li>
+                        <a href="#">Партнеры</a>
+                    </li>
+                </ul>
+                <ul class="footer-top__list-two">
+                    <li>
+                        <a href="#">Стоимость</a>
+                    </li>
+                    <li>
+                        <a href="#">Блог</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="footer-top__social">
+                    <a href="#" class="facebook__background">
+                        <div class="facebook"></div>
+                    </a>
+                    <a href="#" class="in__background">
+                        <div class="in"></div>
+                    </a>
                 </div>
+                <p class="footer-top__address">
+                    115114, г. Москва,<br>
+                    Дербеневская наб., д. 11,<br>
+                    БЦ «Полларс», корп. В, оф. 1402<br>
+                    <span>+7 (495) 646 75 58</span>
+                </p>
             </div>
         </div>
     </div>
     <div class="footer-bottom">
         <div class="container">
-            <div class="footer__wrapper-bottom col-lg-10 mx-auto">
-                <div class="row justify-content-between">
-                    <p class="footer-bottom__rights">
-                        © 2013 - 2019, «АйДи – Технологии управления». Все права защищены.
-                    </p>
-                    <div class="footer-bottom__logo">
-                        <div>
-                            <span class="footer-bottom__logo__created">СОЗДАНО</span>
-                            <span class="footer-bottom__logo__year">2019</span>
-                        </div>
-                        <a class="logo-2015"></a>
+            <div class="footer-bottom__items">
+                <p class="footer-bottom__rights">
+                    © 2013 - 2019, «АйДи – Технологии управления». Все права защищены.
+                </p>
+                <div class="footer-bottom__logo">
+                    <div>
+                        <span class="footer-bottom__logo__created">СОЗДАНО</span>
+                        <span class="footer-bottom__logo__year">2019</span>
                     </div>
+                    <a class="logo-2015"></a>
                 </div>
             </div>
         </div>

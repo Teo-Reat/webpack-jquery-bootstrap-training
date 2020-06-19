@@ -4,31 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Documino</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-<!-- Trigger the modal with a button -->
-<!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
-
-<!-- Modal -->
-<!--<div id="myModal" class="modal fade" role="dialog">-->
-<!--    <div class="modal-dialog">-->
-
-<!--        &lt;!&ndash; Modal content&ndash;&gt;-->
-<!--        <div class="modal-content">-->
-<!--            <div class="modal-header">-->
-<!--                <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-<!--                <h4 class="modal-title">Modal Header</h4>-->
-<!--            </div>-->
-<!--            <div class="modal-body">-->
-<!--                <p>Some text in the modal.</p>-->
-<!--            </div>-->
-<!--            <div class="modal-footer">-->
-<!--                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--    </div>-->
-<!--</div>-->
 <header class="header">
     <div class="container">
         <div class="row">
@@ -87,7 +65,7 @@
                                 </button>
                             </div>
                             <div class="search">
-                                <div class="magnifier"></div>
+                                <i class="fas fa-search icon-search"></i>
                             </div>
                         </div>
                     </div>
@@ -373,26 +351,37 @@
             </div>
         </div>
     </section>
-<!--        <section class="popup modal fade" id="myModal" role="dialog">-->
-<!--            <button type="button" id="popup__consultation__close" class="close" data-dismiss="modal"></button>-->
-<!--            <h3>Получить консультацию</h3>-->
-<!--            <form class="popup__form mx-auto">-->
-<!--                <label><input type="text" name="name" class="popup__form__field" placeholder="Ваше имя"></label>-->
-<!--                <label><input type="text" name="phone" class="popup__form__field" placeholder="Телефон"></label>-->
-<!--                <label><input type="email" name="email" class="popup__form__field" placeholder="Е-mail"></label>-->
-<!--                <label><textarea name="message" class="popup__form__field"-->
-<!--                                 placeholder="Ваше сообщение"></textarea></label>-->
-<!--                <div><img src="assets/images/captcha.jpg" alt=""></div>-->
-<!--                <button type="submit">ЗАКАЗАТЬ</button>-->
-<!--                <div class="popup-rights">-->
-<!--                    <input type="checkbox" id="popup-rights__checkbox">-->
-<!--                    <label for="popup-rights__checkbox">Нажимая кнопку «Заказать», я даю свое согласие на обработку моих-->
-<!--                        персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О-->
-<!--                        персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных-->
-<!--                        данных</label>-->
-<!--                </div>-->
-<!--            </form>-->
-<!--        </section>-->
+    <section id="myModal" class="modal fade popup" role="dialog" style="display: none;">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close popup__consultation__close" data-dismiss="modal"></button>
+                    <h3 class="modal-title popup__title">Получить консультацию</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="popup__form mx-auto">
+                        <label><input type="text" name="name" class="popup__form__field" placeholder="Ваше имя"></label>
+                        <label><input type="text" name="phone" class="popup__form__field" placeholder="Телефон"></label>
+                        <label><input type="email" name="email" class="popup__form__field" placeholder="Е-mail"></label>
+                        <label><textarea name="message" class="popup__form__field"
+                                         placeholder="Ваше сообщение"></textarea></label>
+                        <div><img src="assets/images/captcha.jpg" alt=""></div>
+                        <button type="submit">ЗАКАЗАТЬ</button>
+                        <div class="popup-rights">
+                            <input type="checkbox" id="popup-rights__checkbox">
+                            <label for="popup-rights__checkbox">Нажимая кнопку «Заказать», я даю свое согласие на обработку моих
+                                персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О
+                                персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных
+                                данных</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </section>
 </main>
 <footer class="footer">
     <div class="footer-top">

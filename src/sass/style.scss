@@ -68,7 +68,6 @@ button {
 //}
 
 //___Header___
-//Header__Logo
 .header {
   background: white;
   position: fixed;
@@ -79,10 +78,6 @@ button {
   top: 0;
 }
 
-.header-fixed {
-
-}
-
 .header__wrapper {
   margin: 0;
 }
@@ -91,12 +86,9 @@ button {
   position: static;
 }
 
+//Header__Logo
 .logo {
-  background-position: -1px -0px;
-  width: 168px;
-  height: 34px;
-  margin: 50px 0 0 0;
-  padding-left: 15px;
+  margin-top: 45px;
 }
 
 //Header__Navigation
@@ -240,6 +232,10 @@ button {
   transition: .5s;
 }
 
+.mobile-bars {
+  display: none;
+}
+
 //___Main___
 //Main__Title
 .title-block {
@@ -247,7 +243,7 @@ button {
   background-size: cover;
   color: white;
   margin-top: 130px;
-  padding: 0 0 285px;
+  padding: 0 0 240px;
 }
 
 //Main__Title__Description
@@ -298,6 +294,25 @@ button {
   }
 }
 
+.title-block__points {
+  display: flex;
+  margin-top: 30px;
+}
+
+.title-block__point {
+  height: 8px;
+  width: 8px;
+  margin-left: 11px;
+  background: white;
+  border-radius: 50%;
+  &:first-child {
+    margin-left: 60px;
+  }
+}
+
+.title-block__point__active {
+  background-color: #98d6ff;
+}
 //Main__Advantages
 .advantages {
   margin-top: -175px;
@@ -606,6 +621,7 @@ button {
   &:hover .news__item__description > h4 {
     font-size: 18px;
     max-width: 310px;
+    transition: .5s;
   }
 
   &::before {
@@ -665,7 +681,6 @@ button {
   font-family: $font-secondary;
   max-width: 220px;
   margin: 0;
-  //align-self: flex-end;
 }
 
 //Main__Popup-window
@@ -676,7 +691,6 @@ button {
   top: 0;
   width: 100%;
   z-index: 20;
-  //transition: .5s;
   background: url("../assets/images/popup-background.jpg");
   height: 100%;
   padding-top: 110px;
@@ -849,8 +863,14 @@ button {
   border-radius: 50%;
   transition: .5s;
 
-  & > div {
-    margin: 10px 0 0 10px;
+  & > .facebook,
+  & > .linkedin {
+    margin: 7px 0 0 12px;
+    font-size: 24px;
+    color: $color-secondary;
+  }
+  & > .linkedin {
+    margin: 7px 0 0 10px;
   }
 
   &:hover {
@@ -1032,19 +1052,13 @@ button {
 
 ////-Other
 
-.logo, .logo-2015, .documino-logo2, .magnifier-hover, .magnifier,
-.in, .calendar, .facebook {
+.logo-2015, .documino-logo2, .magnifier-hover, .magnifier,
+.calendar {
   display: inline-block;
   background: url('../assets/images/other-sprites.png') no-repeat;
   overflow: hidden;
   text-indent: -9999px;
   text-align: left;
-}
-
-.logo {
-  background-position: -1px -0px;
-  width: 168px;
-  height: 34px;
 }
 
 .logo-2015 {
@@ -1057,19 +1071,6 @@ button {
   background-position: -57px -35px;
   width: 33px;
   height: 34px;
-}
-
-.in {
-  background-position: -91px -67px;
-  width: 22px;
-  height: 17px;
-}
-
-//.calendar { background-position: -155px -35px; width: 13px; height: 15px; }
-.facebook {
-  background-position: -155px -51px;
-  width: 11px;
-  height: 18px;
 }
 
 //-Desktops
@@ -1105,20 +1106,35 @@ button {
   .header {
     position: static;
   }
-  .header__wrapper > div {
-    padding: 35px 10px;
+  //.header__wrapper > div {
+  //  padding: 35px 10px;
+  //  margin: 0;
+  //}
+
+  .logo__wrapper {
+    padding: 0 5px 35px 5px;
+    width: 100%;
   }
+
   .logo {
-    margin: 0;
+    display: flex;
+    justify-content: space-between;
   }
+
   .main-navigation,
   .contact-block,
   #main-navigation__system__menu {
     display: none;
   }
+
+  .mobile-bars {
+    display: block;
+    font-size: 28px;
+  }
   //Main__Title
   .title-block {
     margin: 0;
+    padding: 0;
     height: auto;
     background-position: left;
   }
@@ -1141,7 +1157,7 @@ button {
     }
 
     & > button {
-      margin: 50px 0 90px;
+      margin-top: 50px;
       font-size: 8px;
       letter-spacing: 3.08px;
     }
@@ -1154,28 +1170,39 @@ button {
       width: 100%;
     }
   }
+  .title-block__points {
+    width: 72px;
+    margin: 50px auto 30px;
+    justify-content: space-between;
+  }
+  .title-block__point {
+    margin-left: 0;
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
   //Main__Advantages
   .advantages {
     background: $color-additional;
+    margin-top: 0;
+    padding-bottom: 60px;
   }
   .advantages__items {
-    position: static;
     overflow: hidden;
-    height: auto;
-  }
-  .advantages__wrapper {
     padding: 0;
-    position: static;
     margin-top: 70px;
-
     & > div {
       &:nth-child(3) {
         flex-direction: column-reverse;
       }
     }
   }
+
   .advantages__description {
-    padding: 0;
+    padding: 0 20px;
 
     & > h3 {
       font-size: 24px;
@@ -1262,6 +1289,7 @@ button {
   }
   //Main__News
   .news {
+    overflow: hidden;
     padding: 40px 0 65px 0;
 
     & > h2 {
@@ -1285,10 +1313,11 @@ button {
     }
   }
   //Footer
+  .footer-top {
+    padding-bottom: 55px;
+  }
   .footer-top__map {
     width: 100%;
-    margin-left: 15px;
-    background: red;
   }
   .footer-top__list-one,
   .footer-top__list-two {
@@ -1297,8 +1326,18 @@ button {
   }
   .footer-top__social {
     order: 5;
+    margin-top: 45px;
+    & > a:first-child {
+      margin-left: 0;
+    }
   }
   .footer-top__address {
     margin-right: 15px;
+  }
+  .footer-bottom {
+    height: 190px;
+  }
+  .footer-bottom__items {
+    display: none;
   }
 }

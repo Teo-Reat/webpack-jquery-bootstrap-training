@@ -543,8 +543,9 @@ button {
 }
 
 .capabilities__image {
+  display: flex;
+  justify-content: space-between;
   margin-top: 60px;
-  position: relative;
 
   & > img {
     display: block;
@@ -552,16 +553,15 @@ button {
   }
 
   & > a {
-    position: absolute;
-    top: 220px;
-    padding: 0 10px;
+    display: block;
+    margin-top: 220px;
 
     &:first-child {
-      left: -10px;
+      padding-right: 20px;
     }
 
     &:last-child {
-      right: -10px;
+      padding-left: 20px;
     }
   }
 }
@@ -1373,7 +1373,7 @@ button {
   }
   //Main__Capabilities
   .capabilities {
-    margin: 55px 0 150px;
+    margin: 55px 0 0;
 
     & > h2 {
       font-size: 26px;
@@ -1384,16 +1384,18 @@ button {
     display: none;
   }
   .capabilities__image {
+    flex-wrap: wrap;
     & > img {
       width: 100%;
+      order: -1;
     }
 
     & > a:first-child {
-      left: 100px;
+      margin: 35px 0 65px auto;
     }
 
     & > a:last-child {
-      right: 100px;
+      margin: 35px auto 65px 0;
     }
   }
   .capabilities__back,

@@ -34,8 +34,8 @@
 //IcoMoon fonts
 @font-face {
   font-family: 'icomoon';
-  src:  url('../assets/fonts/icomoon.eot?ufdarp');
-  src:  url('../assets/fonts/icomoon.eot?ufdarp#iefix') format('embedded-opentype'),
+  src: url('../assets/fonts/icomoon.eot?ufdarp');
+  src: url('../assets/fonts/icomoon.eot?ufdarp#iefix') format('embedded-opentype'),
   url('../assets/fonts/icomoon.ttf?ufdarp') format('truetype'),
   url('../assets/fonts/icomoon.woff?ufdarp') format('woff'),
   url('../assets/fonts/icomoon.svg?ufdarp#icomoon') format('svg');
@@ -62,25 +62,32 @@
 .icon-arrow-thin-right:before {
   content: "\e901";
 }
+
 .icon-arrow-down:before {
   content: "\e902";
 }
+
 .icon-close:before {
   content: "\e903";
   color: #555555;
 }
+
 .icon-menu:before {
   content: "\e900";
 }
+
 .icon-search:before {
   content: "\e986";
 }
+
 .icon-checkmark:before {
   content: "\ea10";
 }
+
 .icon-facebook:before {
   content: "\ea90";
 }
+
 .icon-linkedin2:before {
   content: "\eaca";
 }
@@ -150,7 +157,8 @@ button {
 .main-navigation {
   font-size: 16px;
   font-weight: 400;
-  &> ul {
+
+  & > ul {
     padding: 0;
     margin: 0;
   }
@@ -344,9 +352,11 @@ button {
     display: flex;
     margin: 30px 0 0;
     justify-content: center;
+
     & > .slick-active > button {
       background-color: #98d6ff;
     }
+
     & > li > button {
       display: block;
       font-size: 0;
@@ -362,13 +372,16 @@ button {
     }
   }
 }
+
 .prime__slider {
   margin-top: 145px;
   min-width: 0;
   overflow: hidden;
+
   & .slick-track {
     display: flex;
   }
+
   & .slick-list {
     overflow: hidden;
   }
@@ -508,13 +521,16 @@ button {
 .customers__wrapper {
   padding: 0 80px;
   position: relative;
+
   & .slick-track {
     display: flex;
     justify-content: space-around;
   }
+
   & .slick-list {
     overflow: hidden;
   }
+
   & .slick-arrow {
     outline: transparent;
     margin-top: 20px;
@@ -530,15 +546,18 @@ button {
     background: transparent;
     transition: .5s;
     opacity: .3;
+
     &:hover {
       transition: .5s;
       opacity: 1;
     }
   }
+
   & .slick-prev {
     left: 15px;
     transform: rotate(-45deg);
   }
+
   & .slick-next {
     right: 15px;
     transform: rotate(135deg);
@@ -633,12 +652,15 @@ button {
   justify-content: space-between;
   margin-top: 60px;
   position: relative;
+
   & .slick-track {
     display: flex;
   }
+
   & .slick-list {
     overflow: hidden;
   }
+
   & .slick-arrow {
     height: 40px;
     width: 40px;
@@ -655,16 +677,19 @@ button {
     margin-top: -20px;
     z-index: 10;
     transition: .5s;
+
     &:hover {
       border-right: 3px solid $color-primary;
       border-bottom: 3px solid $color-primary;
       transition: .5s;
     }
   }
+
   .slick-prev {
     left: 8px;
     transform: rotate(135deg);
   }
+
   .slick-next {
     right: 8px;
     transform: rotate(-45deg);
@@ -677,6 +702,7 @@ button {
     margin: 0 auto;
   }
 }
+
 //Main__News
 .news {
   padding: 95px 0 100px 0;
@@ -1201,6 +1227,7 @@ button {
   .contact-block {
     width: 60%;
     margin-left: 100px;
+
     & > .row {
       justify-content: space-between;
       flex-wrap: nowrap;
@@ -1210,9 +1237,11 @@ button {
     margin: 0;
     width: 100%;
     display: flex;
+
     & > p {
       margin-top: 21px;
     }
+
     & > button {
       margin-left: auto;
     }
@@ -1231,21 +1260,29 @@ button {
   }
   .main-navigation__item__sub {
     margin-right: 50px;
+
     & > a {
       padding: 15px 0;
     }
   }
   //Main
   //Main__Prime
+  .prime {
+    margin-top: 0;
+  }
   .prime__title {
-    margin-top: 35px;
     & > h1 {
+      font-size: 26px;
+      line-height: 35px;
       max-width: 100%;
+      margin-top: 0;
     }
-    & > button {
-      margin-top: 35px;
+
+    & > p {
+      font-size: 16px;
     }
   }
+
   .prime__slider {
     margin-top: 35px;
   }
@@ -1268,6 +1305,7 @@ button {
       font-size: 26px;
       line-height: 35px;
     }
+
     & > p {
       font-size: 16px;
     }
@@ -1282,6 +1320,17 @@ button {
     & p {
       font-size: 20px;
     }
+  }
+  //Main__Advantages
+  .advantages__items {
+    & > div {
+      &:nth-child(3) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+  .advantages__description {
+    margin-top: 20px;
   }
   //Main__Customers
   .customers__wrapper {
@@ -1319,6 +1368,7 @@ button {
   .main-navigation {
     display: none;
     width: 100%;
+
     & > ul {
       flex-direction: column;
     }
@@ -1328,6 +1378,7 @@ button {
     position: relative;
     display: flex;
     justify-content: space-between;
+
     &::before {
       content: '';
       position: absolute;
@@ -1354,6 +1405,7 @@ button {
     border: none;
     border-radius: 50%;
     margin: 20px 0;
+
     & > span {
       display: block;
       margin: 0;
@@ -1362,11 +1414,13 @@ button {
 
   .main-navigation__item {
     position: relative;
+
     & > button {
       padding: 20px 0;
       width: 100%;
       text-align: left;
     }
+
     &::after,
     .main-navigation__item__active::after {
       display: block;
@@ -1379,6 +1433,7 @@ button {
       top: 20px;
       text-align: right;
     }
+
     &:nth-child(3)::after,
     &:nth-child(4)::after,
     &:nth-child(5)::after,
@@ -1408,6 +1463,7 @@ button {
 
   .main-navigation__item__sub {
     margin-left: 26px;
+
     & > a {
       padding: 12px 0;
     }
@@ -1424,10 +1480,12 @@ button {
     margin: 0 -15px;
     width: 115%;
     display: block;
+
     & > p {
       letter-spacing: -1px;
       text-align: center;
     }
+
     & > button {
       width: 100%;
       padding: 20px 0;
@@ -1542,6 +1600,7 @@ button {
 
   .customers__wrapper {
     padding: 0 10px;
+
     & .slick-arrow {
       margin-top: 10px;
     }
@@ -1583,17 +1642,21 @@ button {
   .capabilities__slider {
     flex-wrap: wrap;
     justify-content: center;
+
     & .slick-list {
       order: -1;
     }
+
     & .slick-arrow {
       position: static;
       height: 25px;
       width: 25px;
     }
+
     & .slick-prev {
       margin: 35px 20px 70px 0;
     }
+
     & .slick-next {
       margin: 35px 0 70px 20px;
     }
@@ -1635,6 +1698,7 @@ button {
     width: 100%;
     height: 100%;
     padding: 10px;
+
     & .popup__title {
       font-size: 18px;
       text-align: left;
@@ -1651,9 +1715,11 @@ button {
     & textarea {
       height: 60px;
     }
+
     & > div > img {
       margin-top: 10px;
     }
+
     & > button {
       margin-top: 10px;
       padding: 10px 0;
@@ -1663,6 +1729,7 @@ button {
   .popup-rights {
     //padding: 0 5px;
     margin-top: 10px;
+
     & > label {
       font-size: 10px;
       line-height: 16px;
@@ -1675,6 +1742,7 @@ button {
     right: 10px;
     height: 25px;
     width: 25px;
+
     &::before,
     &::after {
       top: 12px;

@@ -232,7 +232,7 @@ button {
 
 //___Main___
 //Main__Title
-.title-block {
+.prime {
   background: url("../assets/images/background-all.jpg") no-repeat center $color-primary;
   background-size: cover;
   color: white;
@@ -241,7 +241,7 @@ button {
 }
 
 //Main__Title__Description
-.title-block__title {
+.prime__title {
   margin-top: 95px;
 
   & > p {
@@ -280,33 +280,50 @@ button {
 }
 
 //Main__Title__Images
-.title-block__images {
+.prime__content {
+  & .slick-dots {
+    display: flex;
+    margin: 30px 0 0;
+    justify-content: center;
+    & > .slick-active > button {
+      background-color: #98d6ff;
+    }
+    & > li > button {
+      display: block;
+      font-size: 0;
+      box-sizing: border-box;
+      border: none;
+      padding: 0;
+      outline: transparent;
+      height: 8px;
+      width: 8px;
+      margin-left: 11px;
+      background: white;
+      border-radius: 50%;
+    }
+  }
+}
+.prime__slider {
   margin-top: 145px;
+  min-width: 0;
+  overflow: hidden;
+  & .slick-track {
+    display: flex;
+  }
+  & .slick-list {
+    overflow: hidden;
+  }
+}
 
+.prime__slider__item {
   & > img {
     width: 100%;
+    min-width: 0;
   }
 }
 
-.title-block__points {
-  display: flex;
-  margin-top: 30px;
-}
-
-.title-block__point {
-  height: 8px;
-  width: 8px;
-  margin-left: 11px;
-  background: white;
-  border-radius: 50%;
-
-  &:first-child {
-    margin-left: 60px;
-  }
-}
-
-.title-block__point__active {
-  background-color: #98d6ff;
+.prime__slider__dots {
+  display: none;
 }
 
 //Main__Advantages
@@ -428,6 +445,51 @@ button {
   margin-top: 80px;
 }
 
+//Main__Customers__Slide
+.customers__wrapper {
+  padding: 0 80px;
+  position: relative;
+  & .slick-track {
+    display: flex;
+    justify-content: space-around;
+  }
+  & .slick-list {
+    overflow: hidden;
+  }
+  & .slick-arrow {
+    outline: transparent;
+    margin-top: 20px;
+    position: absolute;
+    padding: 0;
+    top: 50%;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border: 3px solid transparent;
+    border-left: 3px solid white;
+    border-top: 3px solid white;
+    background: transparent;
+    transition: .5s;
+    opacity: .3;
+    &:hover {
+      transition: .5s;
+      opacity: 1;
+    }
+  }
+  & .slick-prev {
+    left: 15px;
+    transform: rotate(-45deg);
+  }
+  & .slick-next {
+    right: 15px;
+    transform: rotate(135deg);
+  }
+}
+
+.customers__item {
+  text-align: center;
+}
+
 .customers > h2 {
   color: #ffffff;
   text-align: center;
@@ -455,41 +517,6 @@ button {
 
 .sibur {
   margin-top: 87px;
-}
-
-.customers__back,
-.customers__next {
-  margin-top: 86px;
-  width: 15px;
-  height: 15px;
-  border: 3px solid transparent;
-  border-left: 3px solid white;
-  border-top: 3px solid white;
-  transform: rotate(-45deg);
-  margin-left: 3px;
-}
-
-.customers__next {
-  transform: rotate(135deg);
-  margin-right: 3px;
-}
-
-.customers__wrapper > a:first-child,
-.customers__wrapper > a:last-child {
-  padding: 0 10px 0 2px;
-  cursor: pointer;
-  margin: 0 0 0 13px;
-  opacity: .7;
-}
-
-.customers__wrapper > a:last-child {
-  padding: 0 2px 0 10px;
-  margin: 0 13px 0 0;
-}
-
-.customers__wrapper > a:first-child:hover,
-.customers__wrapper > a:last-child:hover {
-  opacity: 1;
 }
 
 //Main__Capabilities
@@ -542,53 +569,55 @@ button {
   }
 }
 
-.capabilities__image {
+.capabilities__slider {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  position: relative;
+  & .slick-track {
+    display: flex;
+  }
+  & .slick-list {
+    overflow: hidden;
+  }
+  & .slick-arrow {
+    height: 40px;
+    width: 40px;
+    font-size: 0;
+    padding: 0;
+    border-radius: 0;
+    border: 3px solid transparent;
+    border-right: 3px solid $color-secondary;
+    border-bottom: 3px solid $color-secondary;
+    display: block;
+    position: absolute;
+    top: 50%;
+    background: transparent;
+    margin-top: -20px;
+    z-index: 10;
+    transition: .5s;
+    &:hover {
+      border-right: 3px solid $color-primary;
+      border-bottom: 3px solid $color-primary;
+      transition: .5s;
+    }
+  }
+  .slick-prev {
+    left: 8px;
+    transform: rotate(135deg);
+  }
+  .slick-next {
+    right: 8px;
+    transform: rotate(-45deg);
+  }
+}
 
+.capabilities__slider__item {
   & > img {
     display: block;
     margin: 0 auto;
   }
-
-  & > a {
-    display: block;
-    margin-top: 220px;
-
-    &:first-child {
-      padding-right: 20px;
-    }
-
-    &:last-child {
-      padding-left: 20px;
-    }
-  }
 }
-
-.capabilities__back,
-.capabilities__next {
-  width: 30px;
-  height: 30px;
-  border: 3px solid transparent;
-  border-left: 3px solid $color-secondary;
-  border-top: 3px solid $color-secondary;
-  transform: rotate(-45deg);
-  transition: .5s;
-  margin-left: 7px;
-
-  &:hover {
-    border-left: 3px solid $color-primary;
-    border-top: 3px solid $color-primary;
-    transition: .5s;
-  }
-}
-
-.capabilities__next {
-  transform: rotate(135deg);
-  margin-right: 7px;
-}
-
 //Main__News
 .news {
   padding: 95px 0 100px 0;
@@ -1244,16 +1273,16 @@ button {
     display: none;
   }
   //Main__Title
-  .title-block {
+  .prime {
     margin: 0;
     padding: 0;
     height: auto;
     background-position: left;
   }
-  .title-block__content {
+  .prime__content {
     flex-direction: column-reverse;
   }
-  .title-block__title {
+  .prime__title {
     margin-top: 35px;
 
     & > h1 {
@@ -1274,29 +1303,18 @@ button {
       letter-spacing: 3.08px;
     }
   }
-  .title-block__images {
+  //Main__Title__Slider
+  .prime__content {
+    & .prime__slider__dots {
+      display: block;
+      margin-bottom: 50px;
+    }
+  }
+  .prime__slider {
     padding-right: 15px;
     margin-top: 73px;
+  }
 
-    & > img {
-      width: 100%;
-    }
-  }
-  .title-block__points {
-    width: 72px;
-    margin: 50px auto 30px;
-    justify-content: space-between;
-  }
-  .title-block__point {
-    margin-left: 0;
-    width: 8px;
-    height: 8px;
-    flex-shrink: 0;
-
-    &:first-child {
-      margin-left: 0;
-    }
-  }
   //Main__Advantages
   .advantages {
     background: $color-additional;
@@ -1346,10 +1364,14 @@ button {
   .customers {
     margin-top: 60px;
   }
-  .customers__back,
-  .customers__next {
-    margin-top: 69px;
+
+  .customers__wrapper {
+    padding: 0 10px;
+    & .slick-arrow {
+      margin-top: 10px;
+    }
   }
+
   .rosset,
   .rosatom,
   .fskees,
@@ -1383,26 +1405,31 @@ button {
   .capabilities__items {
     display: none;
   }
-  .capabilities__image {
+  .capabilities__slider {
     flex-wrap: wrap;
-    & > img {
-      width: 100%;
+    justify-content: center;
+    & .slick-list {
       order: -1;
     }
-
-    & > a:first-child {
-      margin: 35px 0 65px auto;
+    & .slick-arrow {
+      position: static;
+      height: 25px;
+      width: 25px;
     }
-
-    & > a:last-child {
-      margin: 35px auto 65px 0;
+    & .slick-prev {
+      margin: 35px 20px 70px 0;
+    }
+    & .slick-next {
+      margin: 35px 0 70px 20px;
     }
   }
-  .capabilities__back,
-  .capabilities__next {
-    width: 20px;
-    height: 20px;
+
+  .capabilities__slider__item {
+    & > img {
+      width: 100%;
+    }
   }
+
   //Main__News
   .news {
     overflow: hidden;

@@ -91,27 +91,29 @@
     </div>
 </header>
 <main class="main">
-    <section class="title-block">
+    <section class="prime">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 mx-auto">
-                    <div class="row title-block__content">
-                        <div class="title-block__title col-lg-4 col-sm-12">
+                    <div class="row prime__content">
+                        <div class="prime__slider__dots"></div>
+                        <div class="prime__title col-lg-4 col-sm-12">
                             <h1>Платформа автоматизации процессов электронного документооборота</h1>
                             <p>Самая современная СЭД</p>
                             <button>Демоверсия</button>
                         </div>
-                        <div class="title-block__images col-lg-8 order-sm-first order-lg-last">
-                            <img src="assets/images/desktop-all.png" alt="">
+                        <div class="prime__slider col-lg-8 order-sm-first order-lg-last">
+                            <div class="prime__slider__item">
+                                <img src="assets/images/desktop-all.png" alt="">
+                            </div>
+                            <div class="prime__slider__item">
+                                <img src="assets/images/desktop-all.png" alt="">
+                            </div>
+                            <div class="prime__slider__item">
+                                <img src="assets/images/desktop-all.png" alt="">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="title-block__points col-lg-5 ml-auto">
-                    <div class="title-block__point"></div>
-                    <div class="title-block__point"></div>
-                    <div class="title-block__point title-block__point__active"></div>
                 </div>
             </div>
         </div>
@@ -247,27 +249,36 @@
     <section class="customers">
         <h2>Клиенты</h2>
         <div class="container">
-            <div class="row justify-content-between customers__wrapper">
-                <a class="">
-                    <div class="customers__back"></div>
-                </a>
-                <a href="#" class="rosset">
+            <div class="row customers__wrapper">
+                <a href="#" class="rosset customers__item">
                     <div class="customer1"></div>
                 </a>
-                <a href="#" class="rosatom">
+                <a href="#" class="rosatom customers__item">
                     <div class="customer2"></div>
                 </a>
-                <a href="#" class="fskees">
+                <a href="#" class="fskees customers__item">
                     <div class="customer3"></div>
                 </a>
-                <a href="#" class="gasprom">
+                <a href="#" class="gasprom customers__item">
                     <div class="customer4"></div>
                 </a>
-                <a href="#" class="sibur">
+                <a href="#" class="sibur customers__item">
                     <div class="customer5"></div>
                 </a>
-                <a>
-                    <div class="customers__next"></div>
+                <a href="#" class="rosset customers__item">
+                    <div class="customer1"></div>
+                </a>
+                <a href="#" class="rosatom customers__item">
+                    <div class="customer2"></div>
+                </a>
+                <a href="#" class="fskees customers__item">
+                    <div class="customer3"></div>
+                </a>
+                <a href="#" class="gasprom customers__item">
+                    <div class="customer4"></div>
+                </a>
+                <a href="#" class="sibur customers__item">
+                    <div class="customer5"></div>
                 </a>
             </div>
         </div>
@@ -294,14 +305,16 @@
                 <button>Мониторинг</button>
             </li>
         </ul>
-        <div class="capabilities__image">
-            <a href="#">
-                <div class="capabilities__back"></div>
-            </a>
-            <img src="assets/images/desktop-big.png" alt="Big laptop">
-            <a href="#">
-                <div class="capabilities__next"></div>
-            </a>
+        <div class="capabilities__slider">
+            <div class="capabilities__slider__item">
+                <img src="assets/images/desktop-big.png" alt="Big laptop">
+            </div>
+            <div class="capabilities__slider__item">
+                <img src="assets/images/desktop-big.png" alt="Big laptop">
+            </div>
+            <div class="capabilities__slider__item">
+                <img src="assets/images/desktop-big.png" alt="Big laptop">
+            </div>
         </div>
     </section>
     <section class="news">
@@ -409,7 +422,7 @@
     </section>
 </main>
 <footer class="footer">
-    <div class="footer-top">
+    <section class="footer-top">
         <div class="container">
             <div class="footer-top__items">
                 <p class="footer-top__map">
@@ -456,8 +469,8 @@
                 </p>
             </div>
         </div>
-    </div>
-    <div class="footer-bottom">
+    </section>
+    <section class="footer-bottom">
         <div class="container">
             <div class="footer-bottom__items">
                 <p class="footer-bottom__rights">
@@ -472,7 +485,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </footer>
 </body>
 </html>

@@ -55,6 +55,13 @@ $(document).ready(() => {
 				settings: {
 					slidesToShow: 1
 				}
+			},
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					arrows: false
+				}
 			}
 		]
 	});
